@@ -5,6 +5,13 @@
     body{
         margin: 0px;
     }
+
+    #smith {
+        display:block;
+        margin:0 auto;
+        height: 325px;
+        width: 92.8%;
+    }
     
     .container {
         display: grid;
@@ -111,7 +118,7 @@
     
         .two-column-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
       }
     
       .profile-image-wrapper img {
