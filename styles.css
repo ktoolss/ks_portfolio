@@ -1,7 +1,7 @@
 /* Main Styles*/
 
 /* * for mobile */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     body{
         margin: 0px;
     }
@@ -139,7 +139,7 @@
 
 
 /* * for desktop */
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 769px) {
 
 body{
     margin: 0px;
