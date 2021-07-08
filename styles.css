@@ -9,8 +9,8 @@
     #smith {
         display:block;
         margin:0 auto;
-        height: 325px;
-        width: 92.8%;
+        max-height: 325px;
+        max-width: 92.8%;
     }
     
     .container {
@@ -112,14 +112,13 @@
           filter: brightness(10%);
       }
     
-    /* Make the construction materials page a form that sends an e-mail with check boxes for what tests they may need (concrete, densities, rebar, etc.).*/
     
-    /* About page */
+    /* * About page */
     
-        .two-column-wrapper {
+        /* .two-column-wrapper {
             display: grid;
             grid-template-columns: 1fr;
-      }
+      } */
     
       .profile-image-wrapper img {
           width: 100%;
