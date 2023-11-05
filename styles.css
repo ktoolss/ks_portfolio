@@ -6,6 +6,10 @@
         margin: 0px;
     }
 
+    .large-font{
+        font-size: 16px;
+    }
+
     .border {
         border: double 4px #FFC0CB;
         padding: 4px;
@@ -164,8 +168,6 @@ body{
     margin-left: 10px;
 }
 
-
-
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -228,7 +230,7 @@ body{
     height: 350px;
     width: 100%;
 }
- 
+
 .img-text-wrapper {
     position: absolute;
     top: 0;
@@ -240,30 +242,30 @@ body{
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
-  }
+}
 
-  .logo-wrapper img {
+.logo-wrapper img {
     width: 50%;
     margin-bottom: 20px;
-  }
+}
 
-  .img-text-wrapper .subtitle {
-      transition: 1s;
-      font-weight: 600;
-      color: transparent;
-  }
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
 
-  
 
-  .img-text-wrapper:hover .subtitle {
-      font-weight: 600;
-      color: lightseagreen;
-  }
 
-  .img-darken {
-      transition: 1s;
-      filter: brightness(10%);
-  }
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
 
 /* Make the construction materials page a form that sends an e-mail with check boxes for what tests they may need (concrete, densities, rebar, etc.).*/
 
