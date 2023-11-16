@@ -1,296 +1,220 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Kristian's Portfolio</title>
-        <link href = "styles.css" rel = "stylesheet">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristian's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .projects-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .project-image img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 20px;
+        }
+        .project-info h3 {
+            margin-top: 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="brand">Kristian's Portfolio</div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
 
-    <body>
-        
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="left-side">
-                        <div class="nav-link-wrapper active">
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="about.html">About</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="pollquest.html">Angular</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="thoughtnest.html">React</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="shelfspace.html">Java</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="citybreeze.html">C++</a>
-                        </div>
-                    </div>
-                
-
-                    <div class="right-side">
-
-                        <div class="brand">
-                            <div>KRISTIAN'S PORTFOLIO</div>
-                        </div>
-
-                    </div>
+    <main>
+        <section class="projects-section">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/angular.jpg" alt="Angular Project">
                 </div>
-
-                <div class="content-wrapper">
-
-                    <!-- ? #1 -->
-                    <div class="portfolio-items-wrapper">
-                        
-                        <div class="portfolio-item-wrapper">
-                            <div class="portfolio-img-background" style="background-image:URL(assets/images/denver.jpg)"></div>
-                            <!-- TODO make it so resume shows up on mobile -->
-                            <a href="assets/Kristian_Smith.pdf" target="_blank">
-                                <div class="img-text-wrapper">
-                                    <div class="logo-wrapper">
-                                        <img src="assets/Logos/resume.png" alt="">
-                                    </div>
-                    
-                                    <div class="subtitle">
-                                        Resume
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    <!-- ? #A -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/angular.jpg)"></div>
-                            
-                            <a href="pollquest.html">
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/angular.png">
-                                    </div>
-
-                                    <div class = "subtitle" >
-                                        Angular Projects
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    <!-- ? #R -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/react.jpg)"></div>
-
-                            <a href="thoughtnest.html">
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/react.png">
-                                    </div>
-
-                                    <div class = "subtitle" >
-                                        React Projects
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    <!-- ? #2 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/js.jpg)"></div>
-
-                            <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/advanceJS">
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/js.png">
-                                    </div>
-
-                                    <div class = "subtitle" >
-                                        Javascript Projects
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    <!-- ? #3 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/wallet.jpg)"></div>
-                            
-                            <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/blochainProjects/theCoin">
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/blockchain.png">
-                                    </div>
-
-                                    <div class = "subtitle">
-                                        Blockchain Projects
-                                    </div>
-                                </div>
-                            </a>    
-                        </div>
-
-                    <!-- ? #4 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/database.jpg)"></div>
-                            
-                            <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/databaseProjects">
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/data.png">
-                                    </div>
-
-                                    <div class = "subtitle">
-                                        Database Projects
-                                    </div>
-                                </div>
-                            </a>   
-                        </div>    
-
-                    <!-- ? #5 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/api.jpg)"></div>
-                            
-                            <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/apiProjects">
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/api.png">
-                                    </div>
-
-                                    <div class = "subtitle">
-                                        API Projects
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    <!-- ? #6 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/ejs.jpg)"></div>
-                            
-                            <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/ejsProjects">
-
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/ejs.png">
-                                    </div>
-
-                                    <div class = "subtitle">
-                                        EJS Projects
-                                    </div>
-                                </div>
-                            </a>    
-                        </div>
-
-                    <!-- ? #7 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/graffiti.jpg)"></div>
-                            
-                            <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/cssProjects">
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/css.png">
-                                    </div>
-    
-                                    <div class = "subtitle">
-                                        CSS Projects
-                                    </div>
-                                </div>
-                            </a>   
-                        </div>
-
-                    <!-- ? #8 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/building.jpg)"></div>
-
-                            <a href = "https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/BootStrap">
-                                
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/bootstrap.png">
-                                    </div>
-
-                                    <div class = "subtitle">
-                                        Bootstrap Projects
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-
-                    <!-- ? #9 -->
-                        <div class="portfolio-item-wrapper">
-                            <div class = "portfolio-img-background" style = "background-image:url(assets/images/calculator.jpg)"></div>
-                            
-                            <a href = "https://github.com/ktoolss/Mama/blob/master/soilCalculator.cs">
-
-                                <div class="img-text-wrapper">
-                                    <div class = "logo-wrapper">
-                                        <img src="assets/Logos/calculator.png">
-                                    </div>
-
-                                    <div class = "subtitle">
-                                        Soils Lab Calculator in C#
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-
-
-                    </div>
+                <div class="project-info">
+                    <h3>Angular Project - PollQuest</h3>
+                    <p>A dynamic polling application featuring real-time data visualization and user authentication.</p>
+                    <a href="pollquest.html" class="btn">View Project</a>
                 </div>
             </div>
-        
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="left-side">
-                        <div class="nav-link-wrapper">
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div class="nav-link-wrapper">
-                            <a href="about.html">About</a>
-                        </div>
-                        <div class="nav-link-wrapper">
-                            <a href="pollquest.html">Angular</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="thoughtnest.html">React</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="shelfspace.html">Java</a>
-                        </div>
-                        <div class="nav-link-wrapper active">
-                            <a href="citybreeze.html">C++</a>
-                        </div>
-                    </div>
-                
-            
-                    <div class="right-side">
-            
-                        <div class="brand">
-                            <div>THANKS FOR VISITING.</div>
-                        </div>
-            
-                    </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/react.jpg" alt="React Project">
                 </div>
-        
-    </body>
-    
+                <div class="project-info">
+                    <h3>React Project - ThoughtNest</h3>
+                    <p>Innovative social platform built with React, showcasing advanced state management and interactive UIs.</p>
+                    <a href="thoughtnest.html" class="btn">View Project</a>
+                </div>
+            </div>
 
-    <script>
-        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/java.jpg" alt="Java Project">
+                </div>
+                <div class="project-info">
+                    <h3>Java Project - ShelfSpace</h3>
+                    <p>Robust inventory management system developed in Java, demonstrating object-oriented programming skills.</p>
+                    <a href="shelfspace.html" class="btn">View Project</a>
+                </div>
+            </div>
 
-        portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            console.log(portfolioItem.childNodes[1].classList)
-            portfolioItem.childNodes[1].classList.add('img-darken');
-        });
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/cpp.jpg" alt="C++ Project">
+                </div>
+                <div class="project-info">
+                    <h3>C++ Project - CityBreeze</h3>
+                    <p>High-performance weather simulation program using C++, focusing on efficiency and data processing.</p>
+                    <a href="citybreeze.html" class="btn">View Project</a>
+                </div>
+            </div>
 
-        portfolioItem.addEventListener('mouseout', () => {
-            console.log(portfolioItem.childNodes[1].classList)
-            portfolioItem.childNodes[1].classList.remove('img-darken');
-        });
-        });
-    </script>
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/js.jpg" alt="Javascript Project">
+                </div>
+                <div class="project-info">
+                    <h3>JavaScript Projects</h3>
+                    <p>Diverse collection of innovative projects built using advanced JavaScript concepts.</p>
+                    <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/advanceJS" class="btn">View Projects</a>
+                </div>
+            </div>
 
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/wallet.jpg" alt="Blockchain Project">
+                </div>
+                <div class="project-info">
+                    <h3>Blockchain Projects</h3>
+                    <p>Exploration into blockchain technology with projects focusing on cryptocurrencies and smart contracts.</p>
+                    <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/blochainProjects/theCoin" class="btn">View Projects</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/database.jpg" alt="Database Project">
+                </div>
+                <div class="project-info">
+                    <h3>Database Projects</h3>
+                    <p>Comprehensive database solutions showcasing data modeling, query optimization, and more.</p>
+                    <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/databaseProjects" class="btn">View Projects</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/api.jpg" alt="API Project">
+                </div>
+                <div class="project-info">
+                    <h3>API Projects</h3>
+                    <p>Projects focused on API development, demonstrating integration and custom API solutions.</p>
+                    <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/apiProjects" class="btn">View Projects</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/ejs.jpg" alt="EJS Project">
+                </div>
+                <div class="project-info">
+                    <h3>EJS Projects</h3>
+                    <p>Engaging web applications utilizing EJS for dynamic content rendering and server-side templating.</p>
+                    <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/ejsProjects" class="btn">View Projects</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/graffiti.jpg" alt="CSS Project">
+                </div>
+                <div class="project-info">
+                    <h3>CSS Projects</h3>
+                    <p>Creative and visually appealing web designs showcasing advanced CSS techniques and animations.</p>
+                    <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/cssProjects" class="btn">View Projects</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/building.jpg" alt="Bootstrap Project">
+                </div>
+                <div class="project-info">
+                    <h3>Bootstrap Projects</h3>
+                    <p>Responsive and mobile-first projects built using Bootstrap framework, emphasizing layout and design.</p>
+                    <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/BootStrap" class="btn">View Projects</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/calculator.jpg" alt="C# Project">
+                </div>
+                <div class="project-info">
+                    <h3>C# Project - Soils Lab Calculator</h3>
+                    <p>A specialized calculator for soil analysis developed in C#, demonstrating desktop application development skills.</p>
+                    <a href="https://github.com/ktoolss/Mama/blob/master/soilCalculator.cs" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Thanks for visiting!</p>
+    </footer>
+</body>
 </html>
