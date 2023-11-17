@@ -1,128 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>About Kristian</title>
-        <link href = "styles.css" rel = "stylesheet">
-    </head>
-
-    <body>
-        
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="left-side">
-                    <div class="nav-link-wrapper">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="pollquest.html">Angular</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="thoughtnest.html">React</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="shelfspace.html">Java</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="citybreeze.html">C++</a>
-                    </div>
-                </div>
-            
-
-                <div class="right-side">
-
-                    <div class="brand">
-                        <div>KRISTIAN'S PROFILE</div>
-                    </div>
-
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <title>About Kristian</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .nav-wrapper {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link-wrapper a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        .brand {
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        .content-wrapper {
+            margin: 20px 0;
+        }
+        .two-column-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .profile-image-wrapper img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto;
+            display: block;
+        }
+        .profile-content-wrapper {
+            flex-basis: 50%;
+            padding: 20px;
+        }
+        .large-font {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        /* Responsive styling for smaller screens */
+        @media screen and (max-width: 768px) {
+            .header {
+                text-align: left;
+            }
+            .navbar {
+                text-align: center;
+            }
+            .navbar a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="brand">Kristian's Portfolio</div>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <!-- Additional links if needed -->
+                </nav>
             </div>
+        </header>
 
-            <div class="content-wrapper">
-                <div class="two-column-wrapper">
-                    <div class="profile-image-wrapper">
-                        <img src="assets/images/ks.jpg" alt="Picture of Kristian" id="smith">
-                    </div>
-
-                    <div class="profile-content-wrapper">
-                        <h1>Geology to Javascript</h1>
-
-                        <p class="large-font">Hi. Thanks for taking some time to learn about me. My name is Kristian and I grew up in Houston, TX. I went to the University of Houston for a B.S. of Geology, with two minors of Geophysics and Biology. I was employed as a geoscientist for 5 years, until I used C# to develop a <a href="https://github.com/ktoolss/Mama/blob/master/soilCalculator.cs">Soils Lab Calculator</a> to automate calculations in the lab I was working in. I discovered how much I really enjoyed coding and decided to enroll in a Bootcamp to enhance my skills.</p>
-                        
-                        <h1>Software Engineering</h1>
-                        <p class="large-font">I'm currently working as a frontend software engineer at Q2. Q2 focuses on providing digital banking and lending solutions to banks, credit unions, alternative finance, and fintech companies in the U.S. and internationally. I work in an agile environment with many experienced colleagues. We work together to resolve bugs and develop quality software.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
         <div class="content-wrapper">
             <div class="two-column-wrapper">
-                
+                <div class="profile-image-wrapper">
+                    <img src="assets/images/ks.jpg" alt="Picture of Kristian">
+                </div>
+
+                <div class="profile-content-wrapper">
+                    <h1>Geology to Javascript</h1>
+                    <p class="large-font">Hi. Thanks for taking some time to learn about me. My name is Kristian and I grew up in Houston, TX. I went to the University of Houston for a B.S. of Geology, with two minors of Geophysics and Biology. I was employed as a geoscientist for 5 years, until I used C# to develop a <a href="https://github.com/ktoolss/Mama/blob/master/soilCalculator.cs">Soils Lab Calculator</a> to automate calculations in the lab I was working in. I discovered how much I really enjoyed coding and decided to enroll in a Bootcamp to enhance my skills.</p>
+                </div>
+            </div>
+
+            <div class="two-column-wrapper">
+                <div class="profile-content-wrapper">
+                    <h1>Software Engineering</h1>
+                    <p class="large-font">I'm currently working as a frontend software engineer at Q2. Q2 focuses on providing digital banking and lending solutions to banks, credit unions, alternative finance, and fintech companies in the U.S. and internationally. I work in an agile environment with many experienced colleagues. We work together to resolve bugs and develop quality software.</p>
+                </div>
+
+                <div class="profile-image-wrapper">
+                    <img src="assets/images/rockets.jpg" alt="Picture related to Kristian's career">
+                </div>
+            </div>
+
+            <div class="two-column-wrapper">
+                <div class="profile-image-wrapper">
+                    <img src="assets/images/bootcamp.jpg" alt="Bootcamp Image">
+                </div>
 
                 <div class="profile-content-wrapper">
                     <h1>ACC Software Bootcamp</h1>
-
                     <p class="large-font">Software Developer Bootcamp Fall 2021</p>
-                    
+                </div>
+            </div>
+
+            <div class="two-column-wrapper">
+                <div class="profile-content-wrapper">
                     <h1>Bootcamp Group Project</h1>
-                    <p class="large-font">We were offered an oppurtunity to develop an application, and pitch this idea to the rest of the class for it to be selected as one of five group projects.</p>
+                    <p class="large-font">We were offered an opportunity to develop an application, and pitch this idea to the rest of the class for it to be selected as one of five group projects.</p>
 
                     <p class="large-font">My project was chosen and I became the project leader for a Javascript <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/blochainProjects/theCoin">Blockchain Project</a>. The blockchain is using a client, server, blockchain algorithm source code, and MongoDB/Mongoose for the database. The team is utilizing an agile workflow with two weekly meetings, where we rotate project manager duties.</p>
 
                     <p class="large-font">As the lead developer, I researched the blockchain algorithms and npm modules, as well as connected the database and client. After this, I made a pitch to the class for my project to be accepted as one of the final projects.</p>
-
                 </div>
 
                 <div class="profile-image-wrapper">
-                    <img src="assets/images/rockets.jpg" alt="Picture of Kristian" id="smith">
+                    <img src="assets/images/project.jpg" alt="Picture of Kristian's project">
                 </div>
             </div>
         </div>
+
+        <div class="footer">
+            <div>THANKS FOR VISITING.</div>
+        </div>
     </div>
-    
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="left-side">
-                    <div class="nav-link-wrapper">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="pollquest.html">Angular</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="thoughtnest.html">React</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="shelfspace.html">Java</a>
-                    </div>
-                    <div class="nav-link-wrapper active">
-                        <a href="citybreeze.html">C++</a>
-                    </div>
-                </div>
-            
-        
-                <div class="right-side">
-        
-                    <div class="brand">
-                        <div>THANKS FOR VISITING.</div>
-                    </div>
-        
-                </div>
-            </div>
-
-        
-    </body>
-    
-
-    
-
+</body>
 </html>
-
- 
