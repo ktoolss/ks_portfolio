@@ -2,110 +2,176 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Kristian's Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>ThoughtNest - Kristian's Portfolio</title>
+    <style>
+        /* Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-wrapper {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link-wrapper a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav-link-wrapper a:hover {
+            color: #007bff;
+        }
+        .brand {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .content-wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .content-wrapper h1, h2 {
+            color: #007bff;
+        }
+        .large-font {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .two-column-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile-image-wrapper {
+            flex: 1;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .profile-image-wrapper img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .profile-image-wrapper img:hover {
+            transform: scale(1.05);
+        }
+        .profile-content-wrapper {
+            flex: 2;
+        }
+        @media screen and (max-width: 768px) {
+            .two-column-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile-image-wrapper {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="nav-wrapper">
-        <div class="left-side">
-            <div class="nav-link-wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="brand">Kristian's Portfolio</div>
+            <nav class="navbar">
                 <a href="index.html">Home</a>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="about.html">About</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="pollquest.html">Angular</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="thoughtnest.html">React</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="shelfspace.html">Java</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="citybreeze.html">C++</a>
-            </div>
+                <!-- <a href="about.html">About</a> -->
+                <!-- <a href="pollquest.html">Angular</a> -->
+                <!-- <a href="thoughtnest.html">React</a> -->
+                <!-- Other navigation links if needed -->
+            </nav>
         </div>
-
-        <div class="right-side">
-            <div class="brand">
-                <div>THOUGHTNEST</div>
-            </div>
-        </div>
-    </div>
+    </header>
 
     <div class="centered-content">
         <div class="content-wrapper">
             <h1>ThoughtNest Introduction:</h1>
-            <br>
             <p class="large-font">
                 Discover ThoughtNest - a comprehensive platform that brings essential office utilities right to your fingertips! ThoughtNest seamlessly integrates a word processor, email client, presentation maker, spreadsheet editor, and a note-taking solution into one dynamic package. Stay organized, efficient, and at the peak of productivity with ThoughtNest. Step into the next generation of office software!
             </p>
-            <br>
             <div class="github-link">
                 <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/reactProjects/ThoughtNest/src" target="_blank">ThoughtNest code on GitHub</a>
                 <p>(ThoughtNest is developed using the React framework)</p>
             </div>
-            <br>
 
-            <!-- Replace image paths with your actual images -->
-            
+            <!-- Each section follows the same two-column format as PollQuest -->
             <p>Word Page:</p>
             <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/word.jpg" alt="Word Page" class="border">
-                </div>
+                <a href="assets/images/word.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/word.jpg" alt="Word Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Word Page</h2>
                     <p class="large-font">Experience seamless document creation and editing with ThoughtNest's Word Page. Rich formatting options, intuitive controls, and a clean interface ensure your content always looks impeccable.</p>
                 </div>
             </div>
-            <br>
 
             <p>Email Page:</p>
             <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/email.jpg" alt="Email Page" class="border">
-                </div>
+                <a href="assets/images/email.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/email.jpg" alt="Email Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Email Page</h2>
                     <p class="large-font">Streamline your communication with ThoughtNest's Email Page. Organize, compose, and manage your emails effortlessly, ensuring you never miss an important message.</p>
                 </div>
             </div>
-            <br>
 
             <p>PowerPoint Page:</p>
             <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/powerpoint.jpg" alt="PowerPoint Page" class="border">
-                </div>
+                <a href="assets/images/powerpoint.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/powerpoint.jpg" alt="PowerPoint Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>PowerPoint Page</h2>
                     <p class="large-font">Craft compelling presentations with dynamic slides, diverse templates, and a suite of powerful tools that will captivate your audience.</p>
                 </div>
             </div>
-            <br>
 
             <p>Spreadsheet Page:</p>
             <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/spreadsheet.jpg" alt="Spreadsheet Page" class="border">
-                </div>
+                <a href="assets/images/spreadsheet.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/spreadsheet.jpg" alt="Spreadsheet Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Spreadsheet Page</h2>
                     <p class="large-font">Crunch numbers, analyze data, and present insights using ThoughtNest's advanced spreadsheet solution. Perfect for both personal and business needs.</p>
                 </div>
             </div>
-            <br>
 
             <p>OneNote Page:</p>
             <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/onenote.jpg" alt="OneNote Page" class="border">
-                </div>
+                <a href="assets/images/onenote.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/onenote.jpg" alt="OneNote Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>OneNote Page</h2>
                     <p class="large-font">Capture your thoughts, ideas, and notes in a structured manner. With ThoughtNest's OneNote page, keeping track of your ideas has never been easier.</p>
@@ -115,32 +181,8 @@
     </div>
 
     <div class="nav-wrapper">
-        <div class="left-side">
-            <div class="nav-link-wrapper">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="about.html">About</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="pollquest.html">Angular</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="thoughtnest.html">React</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="shelfspace.html">Java</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="citybreeze.html">C++</a>
-            </div>
-        </div>
-
-        <div class="right-side">
-            <div class="brand">
-                <div>THANKS FOR VISITING.</div>
-            </div>
-        </div>
+        <!-- Footer Navigation -->
+        <!-- ... -->
     </div>
 </div>
 

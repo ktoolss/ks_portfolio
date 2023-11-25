@@ -2,139 +2,191 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Kristian's Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>PollQuest - Kristian's Portfolio</title>
+    <style>
+        /* Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-wrapper {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link-wrapper a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav-link-wrapper a:hover {
+            color: #007bff;
+        }
+        .brand {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .content-wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .content-wrapper h1, h2 {
+            color: #007bff;
+        }
+        .large-font {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .two-column-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile-image-wrapper {
+            flex: 1;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .profile-image-wrapper img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .profile-image-wrapper img:hover {
+            transform: scale(1.05);
+        }
+        .profile-content-wrapper {
+            flex: 2;
+        }
+        @media screen and (max-width: 768px) {
+            .two-column-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile-image-wrapper {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="nav-wrapper">
-        <div class="left-side">
-            <div class="nav-link-wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="brand">Kristian's Portfolio</div>
+            <nav class="navbar">
                 <a href="index.html">Home</a>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="about.html">About</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="pollquest.html">Angular</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="thoughtnest.html">React</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="shelfspace.html">Java</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="citybreeze.html">C++</a>
-            </div>
+            </nav>
         </div>
-
-        <div class="right-side">
-            <div class="brand">
-                <div>POLLQUEST</div>
-            </div>
-        </div>
-    </div>
+    </header>
 
     <div class="centered-content">
         <div class="content-wrapper">
             <h1>PollQuest Introduction:</h1>
-            <br>
             <p class="large-font">
                 Introducing PollQuest, the ultimate platform for all your polling needs! 
-                Whether you're a business seeking insights, an individual curious about public opinion, or an organization looking to gauge interest, PollQuest has you covered. 
-                With its user-friendly interface and real-time results, you can create, share, and participate in polls effortlessly. 
+                Whether you're a business seeking insights, an individual curious about public opinion, 
+                or an organization looking to gauge interest, PollQuest has you covered. 
+                With its user-friendly interface and real-time results, you can create, share, 
+                and participate in polls effortlessly. 
                 Dive into the world of instant feedback and make informed decisions based on collective intelligence. 
                 Join PollQuest today and be part of the future of polling!
             </p>
-            <br>
             <div class="github-link">
                 <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/angularProjects/pollQuest" target="_blank">PollQuest code on GitHub</a>
                 <p>(PollQuest is made using the Angular framework)</p>
             </div>
-            <br>
+
             <p>Home Page of website: </p>
             <div class="two-column-wrapper">
-                <!-- Placeholder for Angular Project Image 1 -->
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/home.jpg" alt="Angular Project 1" id="angular1" class="border">
-                </div>
-
+                <a href="assets/images/home.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/home.jpg" alt="PollQuest Home Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Home Page</h2>
                     <p class="large-font">The home page of PollQuest allows users to effortlessly scroll through a feed of polls. This intuitive design enables users to swiftly navigate and answer polls, ensuring a seamless and efficient user experience. The modern UI/UX maintains the ease of participation, allowing for quick responses to multiple polls.</p>
                 </div>
             </div>
 
-            <br>
             <p>About Page of website: </p>
             <div class="two-column-wrapper">
-                <!-- Placeholder for Angular Project Image 1 -->
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/about.jpg" alt="Angular Project 1" id="angular1" class="border">
-                </div>
-
+                <a href="assets/images/about.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/about.jpg" alt="About Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>About Page</h2>
                     <p class="large-font">The 'About' page of PollQuest warmly greets visitors, providing comprehensive insight into the platform. It clearly outlines the main features and objectives of PollQuest, offering guidance for those looking to create or participate in polls. The modern UI/UX design of the 'About' page ensures a seamless and informative navigation experience for all users.</p>
                 </div>
             </div>
-
-            <br>
-
+            <!-- Polls Page of website: -->
             <p>Polls Page of website: </p>
             <div class="two-column-wrapper">
-                <!-- Placeholder for Angular Project Image 1 -->
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/polls.jpg" alt="Angular Project 1" id="angular1" class="border">
-                </div>
-
+                <a href="assets/images/polls.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/polls.jpg" alt="Polls Page">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Polls Page</h2>
                     <p class="large-font">This section aggregates all the polls available for users to vote on, making it easy to find polls by category. Each poll is displayed with relevant information, allowing users to quickly understand and participate. Filters provide an easy way to sort and find specific polls.</p>
                 </div>
             </div>
 
-            <br>
-
+            <!-- Voting on polls: -->
             <p>Voting on polls: </p>
             <div class="two-column-wrapper">
-                <!-- Placeholder for Angular Project Image 1 -->
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/poll2.jpg" alt="Angular Project 1" id="angular1" class="border">
-                </div>
-
+                <a href="assets/images/poll2.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/poll2.jpg" alt="Voting Mechanism">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Voting Mechanism</h2>
                     <p class="large-font">Voting on PollQuest is straightforward. Users can view poll details, select their choice, and submit their vote, all in a few clicks. Real-time feedback is provided after the vote is cast, showing current results.</p>
                 </div>
             </div>
 
-            <br>
-
+            <!-- Options to make different category polls: -->
             <p>Options to make different category polls: </p>
             <div class="two-column-wrapper">
-                <!-- Placeholder for Angular Project Image 1 -->
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/industrypolls.jpg" alt="Angular Project 1" id="angular1" class="border">
-                </div>
-
+                <a href="assets/images/industrypolls.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/industrypolls.jpg" alt="Category Polls">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Category Polls</h2>
                     <p class="large-font">PollQuest offers specialized polls for various categories and industries. Users can navigate to this section to view or create polls tailored for specific sectors, ensuring targeted and relevant feedback.</p>
                 </div>
             </div>
 
-            <br>
-
+            <!-- Options to create different polls: -->
             <p>Options to create different polls: </p>
             <div class="two-column-wrapper">
-                <!-- Placeholder for Angular Project Image 1 -->
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/createpoll.jpg" alt="Angular Project 1" id="angular1" class="border">
-                </div>
-
+                <a href="assets/images/createpoll.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/createpoll.jpg" alt="Creating Polls">
+                </a>
                 <div class="profile-content-wrapper">
                     <h2>Creating Polls</h2>
                     <p class="large-font">With an easy-to-use form, users can create polls on topics of their choice. The platform offers customization options such as setting poll duration, multiple choices, and more, ensuring flexibility for poll creators.</p>
@@ -143,34 +195,8 @@
         </div>
     </div>
 
-    <div class="nav-wrapper">
-        <div class="left-side">
-            <div class="nav-link-wrapper">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="about.html">About</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="pollquest.html">Angular</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="thoughtnest.html">React</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="shelfspace.html">Java</a>
-            </div>
-            <div class="nav-link-wrapper active">
-                <a href="citybreeze.html">C++</a>
-            </div>
-        </div>
-
-        <div class="right-side">
-            <div class="brand">
-                <div>THANKS FOR VISITING.</div>
-            </div>
-        </div>
-    </div>
+    <!-- Footer Navigation -->
+    <!-- ... -->
 </div>
 
 </body>
