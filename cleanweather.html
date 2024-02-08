@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CleanWeather - Kristian's Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-wrapper {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link-wrapper a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav-link-wrapper a:hover {
+            color: #007bff;
+        }
+        .brand {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .content-wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .content-wrapper h1, h2 {
+            color: #007bff;
+        }
+        .large-font {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .two-column-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile-image-wrapper {
+            flex: 1;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .profile-image-wrapper img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .profile-image-wrapper img:hover {
+            transform: scale(1.05);
+        }
+        .profile-content-wrapper {
+            flex: 2;
+        }
+        @media screen and (max-width: 768px) {
+            .two-column-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile-image-wrapper {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div class="container">
+            <div class="brand">Kristian's Portfolio</div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="centered-content">
+        <div class="content-wrapper">
+            <h1>Clean Weather Introduction:</h1>
+            <p class="large-font">
+                Introducing Clean Weather, a user-friendly weather app designed for everyone. Built on the reliable OpenWeatherMap API, CleanWeather brings you the latest weather updates in a straightforward and accessible way. Whether you're checking the forecast for your local area or a destination far away, this app provides clear weather information at your fingertips. Its simplicity and ease of use make it ideal for daily checks before heading out, ensuring you're always prepared for the day's weather. With CleanWeather, staying informed about the weather is effortless and efficient.
+            </p>
+            <div class="github-link">
+                <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/vueProjects/src" target="_blank">Clean Weather code on GitHub</a>
+                <p>(Clean Weather is developed using Vue)</p>
+            </div>
+
+            <p>Clean Weather Search Interface:</p>
+            <div class="two-column-wrapper">
+                <a href="assets/images/cityBreezeInterface.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/denvercw.jpg" alt="CleanWeather Interface">
+                </a>
+                <div class="profile-content-wrapper">
+                    <h2>Clean Weather Interface</h2>
+                    <p class="large-font">With Clean Weather, you just enter the name of the city you want to know the weather for, and the API gives you the response in an easy-to-read listing.</p>
+                </div>
+            </div>
+            <br>
+            <p>Clean Weather Toggle Units:</p>
+            <div class="two-column-wrapper">
+                <a href="assets/images/cityBreezeInterface.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/houstoncw.jpg" alt="CleanWeather Interface">
+                </a>
+                <div class="profile-content-wrapper">
+                    <h2>Clean Weather Interface</h2>
+                    <p class="large-font">With CityBreeze, you just enter the name of the city you want to know the weather for, and the API gives you the response in an easy-to-read listing.</p>
+                </div>
+            </div>
+            <br>
+            <p>Clean Weather About:</p>
+            <div class="two-column-wrapper">
+                <a href="assets/images/cityBreezeInterface.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/aboutcw.jpg" alt="CleanWeather Interface">
+                </a>
+                <div class="profile-content-wrapper">
+                    <h2>Clean Weather Interface</h2>
+                    <p class="large-font">With CityBreeze, you just enter the name of the city you want to know the weather for, and the API gives you the response in an easy-to-read listing.</p>
+                </div>
+            </div>
+            <br>
+            <!-- You can add more sections following the same structure if needed -->
+        </div>
+    </div>
+
+    <div class="nav-wrapper">
+        <!-- Footer Navigation -->
+        <!-- ... -->
+    </div>
+</div>
+
+</body>
+</html>
