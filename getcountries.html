@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GetCountries - Kristian's Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-wrapper {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link-wrapper a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav-link-wrapper a:hover {
+            color: #007bff;
+        }
+        .brand {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .content-wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .content-wrapper h1, h2 {
+            color: #007bff;
+        }
+        .large-font {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .two-column-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile-image-wrapper {
+            flex: 1;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .profile-image-wrapper img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .profile-image-wrapper img:hover {
+            transform: scale(1.05);
+        }
+        .profile-content-wrapper {
+            flex: 2;
+        }
+        @media screen and (max-width: 768px) {
+            .two-column-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile-image-wrapper {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div class="container">
+            <div class="brand">Kristian's Portfolio</div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="centered-content">
+        <div class="content-wrapper">
+            <h1>Get Countries Introduction:</h1>
+            <p class="large-font">
+                Get Countries is a comprehensive app designed to offer an in-depth exploration of global data. Harnessing the power of the REST Countries API, it delivers an interactive experience through its use of Ember.js' advanced features like templates, controllers, routes, and services. This app provides detailed insights into different countries, making it a valuable resource for education, travel planning, or general curiosity. Get Countries stands out for its engaging interface, ease of use, and the rich, well-organized information it presents, making global data exploration both enjoyable and educational.
+            </p>
+            <div class="github-link">
+                <a href="https://github.com/ktoolss/myProjects/tree/master/portfolioProJects/emberProjects/app" target="_blank">Get Countries code on GitHub</a>
+                <p>(Get Countries is developed using Ember)</p>
+            </div>
+
+            <p>Get Countries Search Interface:</p>
+            <div class="two-column-wrapper">
+                <a href="assets/images/countriessearch.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/countriessearch.jpg" alt="GetCountries Interface">
+                </a>
+                <div class="profile-content-wrapper">
+                    <h2>Get Countries Interface</h2>
+                    <p class="large-font">In Get Countries, simply input the name of a country, and the combined APIs seamlessly provide detailed information in a user-friendly format.</p>
+                </div>
+            </div>
+            <br>
+            <p>Get Countries Search:</p>
+            <div class="two-column-wrapper">
+                <a href="assets/images/countriessearch2.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/countriessearch2.jpg" alt="GetCountries Search">
+                </a>
+                <div class="profile-content-wrapper">
+                    <h2>Get Countries Search</h2>
+                    <p class="large-font">In Get Countries, entering a country's name triggers the controller, which communicates with services to fetch data via routes. The response is then elegantly displayed through the app's templates, providing an organized and informative view of each country's specifics.</p>
+                </div>
+            </div>
+            <br>
+            <p>Get Countries Home:</p>
+            <div class="two-column-wrapper">
+                <a href="assets/images/countrieshome.jpg" target="_blank" class="profile-image-wrapper">
+                    <img src="assets/images/countrieshome.jpg" alt="GetCountries Home">
+                </a>
+                <div class="profile-content-wrapper">
+                    <h2>Get Countries Home</h2>
+                    <p class="large-font">Visit the home page to navigate the app.</p>
+                </div>
+            </div>
+            <br>
+            <!-- You can add more sections following the same structure if needed -->
+        </div>
+    </div>
+
+    <div class="nav-wrapper">
+        <!-- Footer Navigation -->
+        <!-- ... -->
+    </div>
+</div>
+
+</body>
+</html>
